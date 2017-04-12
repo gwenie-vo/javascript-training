@@ -16,7 +16,6 @@ console.log("b", b);
 // var a = 6;
 // var b = 2;
 // var c = 9;
-
 var a = 6, b = 2, c = 9;
 if((a < b) && (a < c)) {
   console("a = " + a + " is the smallest.");
