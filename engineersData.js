@@ -94,7 +94,7 @@ var engineers = [
     gender: 'Female',
     favoriteColors: [
       'red',
-      'pink',
+      'pink', 
     ],
     experienceYear: 7,
   },

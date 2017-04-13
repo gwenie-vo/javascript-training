@@ -72,8 +72,18 @@ for (var i = engineers.length; i > 0; i--) {
     axonEngineers.push(engineers[i-1].name);
   }
 }checkPluralNoun
-console.log('Bai 7  ' + axonEngineers + checkPluralNoun(axonEngineers) + ' working at Axon company');
+console.log('Bai 8  ' + axonEngineers + checkPluralNoun(axonEngineers) + ' working at Axon company');
 
 function checkPluralNoun(engineers) {
   return engineers.length > 1 ? ' are ' : ' is ';
 }
+
+//Tìm xem có ai trên 5 năm kinh nghiệm không
+var fiveYearsExperienceEngineers = [];
+for (var i = engineers.length; i > 0; i--) {
+  if (engineers[i - 1].experienceYear > 5) {
+    fiveYearsExperienceEngineers.push(engineers[i - 1 ].name);
+  }
+}
+
+console.log('Bai 9 ' + fiveYearsExperienceEngineers + (fiveYearsExperienceEngineers.length > 1 ? ' have ' : ' has ') + '5 years experiences');
