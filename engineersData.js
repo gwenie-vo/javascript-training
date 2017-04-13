@@ -76,7 +76,7 @@ var engineers = [
   {
     name: 'Thanh Nguyen',
     age: 24,
-    company: 'FPT',
+    company: 'AXON',
     gender: 'Female',
     favoriteColors: [
       'red',

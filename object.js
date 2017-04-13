@@ -54,7 +54,7 @@ for (var i = 0, size = engineers.length; i < size; i++) {
     }
   }
 }
-console.log('Bai 6 ' + manLovePink.join(', ') + (manLovePink.length > 1 ? ' are ' : ' is ') + ' mans and they ' + (manLovePink.length > 1 ? ' love ' : ' loves ') + ' pink')
+console.log('Bai 6 ' + manLovePink.join(', ') + checkPluralNoun(manLovePink) + ' mans and they ' + (manLovePink.length > 1 ? ' love ' : ' loves ') + ' pink')
 
 //Tìm xem có ai 25 tuổi không
 engineer25YearsOld = [];
@@ -63,4 +63,17 @@ for (var i = 0, size = engineers.length; i < size; i++) {
     engineer25YearsOld.push(engineers[i].name);
   }
 }
-console.log('Bai 7 ' + engineer25YearsOld.join(', ') + (engineer25YearsOld.length > 1 ? ' are ' :  ' is ') + ' 25 years old');
+console.log('Bai 7 ' + engineer25YearsOld.join(', ') + checkPluralNoun(engineer25YearsOld) + ' 25 years old');
+
+//Tìm xem có ai làm ở Axon không
+axonEngineers = [];
+for (var i = engineers.length; i > 0; i--) {
+  if (engineers[i-1].company.toLowerCase() === 'axon') {
+    axonEngineers.push(engineers[i-1].name);
+  }
+}checkPluralNoun
+console.log('Bai 7  ' + axonEngineers + checkPluralNoun(axonEngineers) + ' working at Axon company');
+
+function checkPluralNoun(engineers) {
+  return engineers.length > 1 ? ' are ' : ' is ';
+}
