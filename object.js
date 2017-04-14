@@ -54,7 +54,7 @@ for (var i = 0, size = engineers.length; i < size; i++) {
     }
   }
 }
-console.log('Bai 6 ' + manLovePink.join(', ') + checkPluralNoun(manLovePink) + ' mans and they ' + (manLovePink.length > 1 ? ' love ' : ' loves ') + ' pink')
+console.log('Bai 6: ' + manLovePink.join(', ') + checkPluralNoun(manLovePink) + ' mans and they ' + (manLovePink.length > 1 ? ' love ' : ' loves ') + ' pink')
 
 //Tìm xem có ai 25 tuổi không
 engineer25YearsOld = [];
@@ -63,7 +63,7 @@ for (var i = 0, size = engineers.length; i < size; i++) {
     engineer25YearsOld.push(engineers[i].name);
   }
 }
-console.log('Bai 7 ' + engineer25YearsOld.join(', ') + checkPluralNoun(engineer25YearsOld) + ' 25 years old');
+console.log('Bai 7: ' + engineer25YearsOld.join(', ') + checkPluralNoun(engineer25YearsOld) + ' 25 years old');
 
 //Tìm xem có ai làm ở Axon không
 axonEngineers = [];
@@ -72,7 +72,7 @@ for (var i = engineers.length; i > 0; i--) {
     axonEngineers.push(engineers[i-1].name);
   }
 }checkPluralNoun
-console.log('Bai 8  ' + axonEngineers + checkPluralNoun(axonEngineers) + ' working at Axon company');
+console.log('Bai 8:  ' + axonEngineers + checkPluralNoun(axonEngineers) + ' working at Axon company');
 
 function checkPluralNoun(engineers) {
   return engineers.length > 1 ? ' are ' : ' is ';
@@ -86,4 +86,14 @@ for (var i = engineers.length; i > 0; i--) {
   }
 }
 
-console.log('Bai 9 ' + fiveYearsExperienceEngineers + (fiveYearsExperienceEngineers.length > 1 ? ' have ' : ' has ') + '5 years experiences');
+console.log('Bai 9: ' + fiveYearsExperienceEngineers + (fiveYearsExperienceEngineers.length > 1 ? ' have ' : ' has ') + '5 years experiences');
+
+//Tìm những người thích màu 'pink' nhưng ko thích màu 'blue'
+engineerLovePinkNotBlue = [];
+for (var i = engineers.length; i > 0; i--) {
+  var engineer = engineers[i - 1];
+  if (engineer.favoriteColors.indexOf('pink') > -1 && engineer.favoriteColors.indexOf('blue') === -1) {
+    engineerLovePinkNotBlue.push(engineer.name);
+  }
+}
+console.log('Bai 10: ' + engineerLovePinkNotBlue.join(', ')  + ' love pink but blue');
