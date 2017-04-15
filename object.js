@@ -173,3 +173,12 @@ for (var i = engineers.length; i > 0; i--) {
   engineerSalary += engineer.name + ' earns ' + engineer.salary + ' a month \n';
 }
 console.log('Bai 15: \n' + engineerSalary);
+
+//Dựa vào số năm kinh nghiệm hãy tính tiền thưởng tết cho từng người với công thức sau: số năm kinh nghiệm * 10% lương
+var engineerWithBonus = '';
+for (var i = engineers.length; i > 0; i--) {
+  var engineer = engineers[i - 1];
+  var bonus = engineer.experienceYear * (engineer.salary.replace('$', '') * 10) / 100;
+  engineerWithBonus += engineer.name + ' has $' + bonus + ' bonus \n';
+}
+console.log('Bai 16: ' + engineerWithBonus);
