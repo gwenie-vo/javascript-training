@@ -112,3 +112,15 @@ for (var i = engineers.length; i > 0; i--) {
   }
 }
 console.log('Bai 11: ' + femaleEngineerAsNet.join(', ') + checkPluralNoun(femaleEngineerAsNet) + ' female, greater than or equal 25 years old, working at AsNet');
+
+//Tìm những người là nam, ko làm ở Asnet và thích nhiều hơn 3 màu
+var maleEngineerAsNet = [];
+for (var i = engineers.length; i > 0; i--) {
+  var engineer = engineers[i - 1];
+  if ((engineer.gender === 'male')
+    && (engineer.company !== 'AsNet')
+    && (engineer.favoriteColors.length > 3)) {
+      maleEngineerAsNet.push(engineer.name);
+  }
+}
+console.log('Bai 12: ' + (maleEngineerAsNet.length > 0 ? maleEngineerAsNet : ' There\'s no ') + 'male, not AsNet employee, and love more than 3 colors');
