@@ -148,3 +148,28 @@ for (var i = engineers.length; i > 0; i--) {
 
 console.log('Bai 14: Second color of \n' + secondColorOfEngineer);
 
+//Thêm property 'salary' cho mỗi nhân viên trong array engineers:
+// Nếu ai làm ở Asnet thì lương là '1000$'
+// Nếu ai làm ở FPT thì lương là '500$'
+// Nếu ai làm ở Axon thì lương là '700$'
+// Các công ty còn lại thì lương là '300$'
+var engineerSalary = '';
+for (var i = engineers.length; i > 0; i--) {
+  var engineer = engineers[i - 1];
+  switch (engineer.company) {
+    case 'AsNet':
+      engineer.salary = '$1000';
+      break;
+    case 'FPT':
+      engineer.salary = '$500';
+      break;
+    case 'Axon':
+      engineer.salary = '$700';
+      break;
+    default:
+      engineer.salary = '$300';
+  }
+
+  engineerSalary += engineer.name + ' earns ' + engineer.salary + ' a month \n';
+}
+console.log('Bai 15: \n' + engineerSalary);
