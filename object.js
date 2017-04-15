@@ -124,3 +124,13 @@ for (var i = engineers.length; i > 0; i--) {
   }
 }
 console.log('Bai 12: ' + (maleEngineerAsNet.length > 0 ? maleEngineerAsNet : ' There\'s no ') + 'male, not AsNet employee, and love more than 3 colors');
+
+//In ra màu thứ 2 mà mỗi người thích là màu gì 
+var secondColorOfEngineer = '';
+for (var i = engineers.length; i > 0; i--) {
+  var engineer = engineers[i - 1];
+    secondColorOfEngineer += engineer.name + ' is '+  engineer.favoriteColors[1] + '\n';
+}
+
+console.log('Bai 14: Second color of \n' + secondColorOfEngineer);
+
