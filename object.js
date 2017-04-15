@@ -125,6 +125,20 @@ for (var i = engineers.length; i > 0; i--) {
 }
 console.log('Bai 12: ' + (maleEngineerAsNet.length > 0 ? maleEngineerAsNet : ' There\'s no ') + 'male, not AsNet employee, and love more than 3 colors');
 
+//Tìm xem ai thích nhiều màu nhất
+var engineerLoveColorTheMost = [];
+for (var i = engineers.length; i > 0; i--) {
+  var engineer = engineers[i - 1];
+  var countColor = 0,
+      numberColorArr = [];
+  for (var j = engineer.favoriteColors.length; j > 0; j--) {
+    countColor += 1;
+    numberColorArr.push(countColor);
+    engineerLoveColorTheMost.push(engineer.name)
+  }
+}
+console.log('Bai 13: ' + engineerLoveColorTheMost + ' love colors the most');
+
 //In ra màu thứ 2 mà mỗi người thích là màu gì 
 var secondColorOfEngineer = '';
 for (var i = engineers.length; i > 0; i--) {
