@@ -248,9 +248,7 @@ var newEngineer = {
     'white'
   ]
 }
-console.log('before ' + engineers.length , engineers);
-var newEngineerList = engineers.unshift(newEngineer);
-console.log('after' + engineers.length, engineers);
-console.log(newEngineerList);
-console.log('Bai 20: ' + ' Ni Ngo is added to the first of the array' + newEngineerList[0]);
+engineers.unshift(newEngineer);
+console.log('Bai 20: ' + ' The new engineer is added to the first of array is ' + engineers[0].name + ' ' + engineers[0].company + ' ' + engineers[0].age);
 
+//
