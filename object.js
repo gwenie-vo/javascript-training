@@ -182,3 +182,18 @@ for (var i = engineers.length; i > 0; i--) {
   engineerWithBonus += engineer.name + ' has $' + bonus + ' bonus \n';
 }
 console.log('Bai 16: ' + engineerWithBonus);
+
+//Sắp xếp mọi người theo tuổi tăng dần và in ra
+
+//Tìm những ai có address và in ra address của họ
+var engineerAddress = '';
+for (var i = engineers.length; i > 0; i--) {
+  var engineer = engineers[i - 1];
+  if (engineer.address) {
+    engineerAddress += engineer.name + '\'s address is ' +  engineer.address + '\n';
+  }
+}
+console.log('Bai 18: \n' + engineerAddress);
+
+//
+
