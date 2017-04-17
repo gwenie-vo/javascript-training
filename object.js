@@ -280,4 +280,19 @@ for (var i = engineers.length; i > 0; i--) {
     count += 1;
   }
 }
-console.log('Bai 22 There are ' + count + ' people working at AsNet');
+console.log('Bai 22: There are ' + count + ' people working at AsNet');
+
+//Đếm xem có bao nhiêu nam, bao nhiêu nữ
+var countMale = 0,
+    countFemale = 0;
+
+for (var i = engineers.length; i > 0; i--) {
+  engineer = engineers[i - 1];
+  if (engineer.gender === 'Male') {
+    countMale += 1;
+  } else {
+    countFemale += 1;
+  }
+}
+
+console.log('Bai 23: There are ' + countMale + ' Male and ' + countFemale + ' Female');
