@@ -237,7 +237,6 @@ console.log('Bai 19: ' + engineerUpdated);
 //giới tính: nữ
 //favorite colors: red, blue, white
 //address: không xác định
-
 var newEngineer = {
   'name': 'Ni Ngo',
   'company': 'Axon',
@@ -247,8 +246,29 @@ var newEngineer = {
     'blue',
     'white'
   ]
-}
+};
 engineers.unshift(newEngineer);
 console.log('Bai 20: ' + ' The new engineer is added to the first of array is ' + engineers[0].name + ' ' + engineers[0].company + ' ' + engineers[0].age);
 
-//
+//Thêm 'Duc Pham' vào cuối danh sách engineers, ‘Duc Pham’ có các infomation như sau:
+// tuổi : 27
+// công ty: 'FPT'
+// giới tính: nam
+// favorite colors: red, gray, yellow, white
+// address: 'Da Nang'
+var addEngineer = {
+  'name': 'Duc Pham',
+  'company': 'FPT',
+  'gender': 'Male',
+  'favoriteColors': [
+    'red',
+    'gray',
+    'yellow',
+    'white'
+  ],
+  'address': 'Da Nang'
+};
+
+engineers.push(addEngineer);
+console.log('Bai 21: ' + 'The new engineer is added is ' + engineers[engineers.length - 1].name);
+
