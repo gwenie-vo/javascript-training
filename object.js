@@ -272,3 +272,12 @@ var addEngineer = {
 engineers.push(addEngineer);
 console.log('Bai 21: ' + 'The new engineer is added is ' + engineers[engineers.length - 1].name);
 
+//Đếm xem có bao nhiêu người làm ở Asnet
+var count = 0;
+for (var i = engineers.length; i > 0; i--) {
+  engineer =engineers[i - 1];
+  if (engineer.company === 'AsNet') {
+    count += 1;
+  }
+}
+console.log('Bai 22 There are ' + count + ' people working at AsNet');
