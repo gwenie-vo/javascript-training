@@ -217,7 +217,7 @@ for (var i = engineers.length; i > 0; i--) {
       engineer.company = 'Axon';
       break;
     case 'Minh Nguyen':
-      engineer.favoriteColor.replace('black', 'gray');
+      // engineer.favoriteColor.replace('black', 'gray');
       break;
     case 'Huynh Vo':
       engineer.gender = 'Male';
@@ -229,3 +229,28 @@ for (var i = engineers.length; i > 0; i--) {
   engineerUpdated.push(engineer.name);
 }
 console.log('Bai 19: ' + engineerUpdated);
+
+
+// Thêm 'Ni Ngo' vào đầu danh sách engineers, ‘Ni Ngo’ có các infomation như sau:
+//tuổi : 26
+//công ty: 'Axon'
+//giới tính: nữ
+//favorite colors: red, blue, white
+//address: không xác định
+
+var newEngineer = {
+  'name': 'Ni Ngo',
+  'company': 'Axon',
+  'gender': 'Female',
+  'favoriteColors': [
+    'red',
+    'blue',
+    'white'
+  ]
+}
+console.log('before ' + engineers.length , engineers);
+var newEngineerList = engineers.unshift(newEngineer);
+console.log('after' + engineers.length, engineers);
+console.log(newEngineerList);
+console.log('Bai 20: ' + ' Ni Ngo is added to the first of the array' + newEngineerList[0]);
+
