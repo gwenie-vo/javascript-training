@@ -195,5 +195,37 @@ for (var i = engineers.length; i > 0; i--) {
 }
 console.log('Bai 18: \n' + engineerAddress);
 
-//
+//Hãy cập nhật lại data cho đúng trong các trường hợp sau: 
+//'An Nguyen' vừa chuyển từ 'FPT' sang 'Axon'
+//'Minh Nguyen' vừa thích thêm màu 'gray' và ko thích màu 'black' nữa
+//'Huynh Vo' vừa phẫu thuật chuyển giới, hãy cập nhật lại gender cho cô ấy ^ ^
+//'Phuong Bui' bị ghi sai tuổi, hãy cập nhật lại cho đúng, đúng là 30
 
+var engineerUpdated = [];
+for (var i = engineers.length; i > 0; i--) {
+  var engineer = engineers[i - 1];
+  // for (var j = engineer.favoriteColors.length; j > 0; j++) {
+  //   var favoriteColor = engineer.favoriteColors[j - 1];
+  //   if (engineer.name === 'Minh Nguyen' && favoriteColor === 'black') {
+  //     var favoriteColorIdx = favoriteColor;
+  //     console.log('favoriteColorIdx', favoriteColorIdx);
+  //     break;
+  //   }
+  // }
+  switch(engineer.name) {
+    case 'An Nguyen':
+      engineer.company = 'Axon';
+      break;
+    case 'Minh Nguyen':
+      engineer.favoriteColor.replace('black', 'gray');
+      break;
+    case 'Huynh Vo':
+      engineer.gender = 'Male';
+      break;
+    case 'Phuong Bui':
+      engineer.age = 30;
+      break;
+  }
+  engineerUpdated.push(engineer.name);
+}
+console.log('Bai 19: ' + engineerUpdated);
