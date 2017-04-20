@@ -288,3 +288,31 @@ for (var i = engineers.length; i > 0; i--) {
 console.log('Bai 23: There are ' + countMale + ' Males and ' + countFemale + ' Females');
 
 //Tách những người làm cùng công ty ra 1 array riêng, mỗi cty 1 array và log các array đó ra.
+var axonEngineers = [],
+    asNetEngineers = [],
+    fptEngineers = [],
+    asianTechEngineers = [],
+    clearPathEngineers = [];
+
+for (var i = engineers.length; i > 0; i--) {
+  var engineer = engineers[i - 1];
+
+  switch (engineer.company.toLowerCase()) {
+    case 'axon':
+      axonEngineers.push(engineer);
+      break;
+    case 'asnet':
+      asNetEngineers.push(engineer);
+      break;
+    case 'fpt':
+      fptEngineers.push(engineer);
+      break;
+    case 'asian tech':
+      asianTechEngineers.push(engineer);
+      break;
+    case 'clear path':
+      clearPathEngineers.push(engineer);
+  }
+}
+
+console.log('Bai 24: ', axonEngineers, asNetEngineers, fptEngineers, asianTechEngineers, clearPathEngineers);
