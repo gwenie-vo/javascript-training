@@ -282,13 +282,9 @@ var countMale = 0,
 
 for (var i = engineers.length; i > 0; i--) {
   engineer = engineers[i - 1];
-  if (engineer.gender === 'Male') {
-    countMale += 1;
-  } else {
-    countFemale += 1;
-  }
+  (engineer.gender === 'Male') ? countMale++ : countFemale++;
 }
 
-console.log('Bai 23: There are ' + countMale + ' Male and ' + countFemale + ' Female');
+console.log('Bai 23: There are ' + countMale + ' Males and ' + countFemale + ' Females');
 
 //Tách những người làm cùng công ty ra 1 array riêng, mỗi cty 1 array và log các array đó ra.
