@@ -8,7 +8,7 @@ var engineers = [
       'red',
       'black',
       'green',
-      'gray'
+      'pink'
     ],
     experienceYear: 3,
     address: 'Da Nang'

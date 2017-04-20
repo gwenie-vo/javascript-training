@@ -205,20 +205,13 @@ console.log('Bai 18: \n' + engineerAddress);
 var engineerUpdated = [];
 for (var i = engineers.length; i > 0; i--) {
   var engineer = engineers[i - 1];
-  // for (var j = engineer.favoriteColors.length; j > 0; j++) {
-  //   var favoriteColor = engineer.favoriteColors[j - 1];
-  //   if (engineer.name === 'Minh Nguyen' && favoriteColor === 'black') {
-  //     var favoriteColorIdx = favoriteColor;
-  //     console.log('favoriteColorIdx', favoriteColorIdx);
-  //     break;
-  //   }
-  // }
   switch(engineer.name) {
     case 'An Nguyen':
       engineer.company = 'Axon';
       break;
     case 'Minh Nguyen':
-      // engineer.favoriteColor.replace('black', 'gray');
+      var colorIdx = engineer.favoriteColors.indexOf('black');
+      engineer.favoriteColors.splice(colorIdx, 1, 'gray');
       break;
     case 'Huynh Vo':
       engineer.gender = 'Male';
@@ -229,7 +222,7 @@ for (var i = engineers.length; i > 0; i--) {
   }
   engineerUpdated.push(engineer.name);
 }
-console.log('Bai 19: ' + engineerUpdated);
+console.log('Bai 19: Successfully!' );
 
 
 // Thêm 'Ni Ngo' vào đầu danh sách engineers, ‘Ni Ngo’ có các infomation như sau:
