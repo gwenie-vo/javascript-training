@@ -28,3 +28,9 @@ var sumFPTsalary = engineers.reduce(function(prevVal, engineer) {
   }
 }, 0)
 console.log('Bai 28: Sumary of FPT engineers', sumFPTsalary);
+
+//29. Tạo ra 1 data mới mà trong đó mức lương của mỗi nhân viên bị trừ đi 100$
+var newSalaryArr = engineers.map(function(engineer) {
+  return parseInt(engineer.salary.replace('$', '')) - 100;
+});
+console.log('Bai 29: New array with salary - $100 ', newSalaryArr);
