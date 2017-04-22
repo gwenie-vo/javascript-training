@@ -34,3 +34,9 @@ var newSalaryArr = engineers.map(function(engineer) {
   return parseInt(engineer.salary.replace('$', '')) - 100;
 });
 console.log('Bai 29: New array with salary - $100 ', newSalaryArr);
+
+//Kiểm tra xem có ai trên 15 năm kinh nghiệm hay ko
+var result = engineers.some(function(engineer) {
+  return engineer.experienceYear > 15;
+})
+console.log('Bai 30: Anyone has more than 15 years experience is ' + result);
