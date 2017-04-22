@@ -239,7 +239,8 @@ var newEngineer = {
     'red',
     'blue',
     'white'
-  ]
+  ],
+  'salary': '$1000'
 };
 engineers.unshift(newEngineer);
 console.log('Bai 20: ' + ' The new engineer is added to the first of array is ' + engineers[0].name + ' ' + engineers[0].company + ' ' + engineers[0].age);
@@ -260,13 +261,14 @@ var addEngineer = {
     'yellow',
     'white'
   ],
+  'salary': '$1000',
   'address': 'Da Nang'
 };
 
 engineers.push(addEngineer);
 console.log('Bai 21: ' + 'The new engineer is added is ' + engineers[engineers.length - 1].name);
 
-//Đếm xem có bao nhiêu người làm ở Asnet
+//Đếm xem có bao aassnhiêu người làm ở Asnet
 var count = 0;
 for (var i = engineers.length; i > 0; i--) {
   engineer =engineers[i - 1];

@@ -12,3 +12,9 @@ var anyUnder18yearsOld = engineers.some(function(engineer) {
   return engineer.age < 18;
 })
 console.log('Bai 26: Any engineer is under 18 years old: ', anyUnder18yearsOld);
+
+//27.Tính tổng tiền lương phải trả cho các nhân viên ở tất cả công ty
+var salaryOfAllEngineers = engineers.reduce(function(prevVal, engineer) {
+  return prevVal + parseInt(engineer.salary.replace('$', ''));
+}, 0);
+console.log('Bai 27: Sumary of engineers\' salary is: $' + salaryOfAllEngineers);
