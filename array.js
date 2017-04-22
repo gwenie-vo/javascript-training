@@ -18,3 +18,13 @@ var salaryOfAllEngineers = engineers.reduce(function(prevVal, engineer) {
   return prevVal + parseInt(engineer.salary.replace('$', ''));
 }, 0);
 console.log('Bai 27: Sumary of engineers\' salary is: $' + salaryOfAllEngineers);
+
+//28. Tính tổng tiền lương phải trả cho các nhân viên ở FPT
+var sumFPTsalary = engineers.reduce(function(prevVal, engineer) {
+  if (engineer.company.toLowerCase() === 'fpt' && engineer.salary) {
+    return prevVal + parseInt(engineer.salary.replace('$', ''));
+  } else {
+    return prevVal;
+  }
+}, 0)
+console.log('Bai 28: Sumary of FPT engineers', sumFPTsalary);
