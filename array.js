@@ -79,4 +79,10 @@ console.log('Bai 35: Check if any engineer is older than 30 years old ', checkAn
 var checkGreaterThan4Colors = engineers.some(function(engineer) {
   return engineer.favoriteColors.length >= 4;
 })
-console.log('Bai 36: Check if any engineer loves equal or greater than 4 colors is ', checkGreaterThan4Colors);
+console.log('Bai 36: Check if any engineer loves equal or greater than 4 colors is ', checkGreaterThan4Colors); 
+
+//37. Kiểm tra xem đã cập nhật đầy đủ thông tin lương cho các nhân viên chưa(có salary hay chưa)
+var checkEveryOneHasSalary = engineers.every(function(engineer) {
+  return engineer.salary
+})
+console.log('Bai 37: Check if every one has salary info ', checkEveryOneHasSalary);
