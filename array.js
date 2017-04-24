@@ -61,3 +61,10 @@ var engineersBiggerThan25 = engineers.filter(function(engineer) {
   return engineer.age > 25;
 })
 console.log('Bai 33: Log all engineers is older than 25 years', engineersBiggerThan25);
+
+//Kiểm tra xem trong tên của mọi người đều có chứa chữ 'n' hết đúng ko
+var checkIfNameHasCharacterN = engineers.every(function(engineer) {
+  return engineer.name.indexOf('n') > -1;
+})
+
+console.log('Bai 34: Check if all name has character `n` is ', checkIfNameHasCharacterN);
