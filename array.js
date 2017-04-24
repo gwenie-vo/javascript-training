@@ -74,3 +74,9 @@ var checkAnyOneOlderThan30 = engineers.some(function(engineer) {
 });
 
 console.log('Bai 35: Check if any engineer is older than 30 years old ', checkAnyOneOlderThan30);
+
+//36.Tìm xem có ai thích từ 4 màu trở lên hay ko 
+var checkGreaterThan4Colors = engineers.some(function(engineer) {
+  return engineer.favoriteColors.length >= 4;
+})
+console.log('Bai 36: Check if any engineer loves equal or greater than 4 colors is ', checkGreaterThan4Colors);
