@@ -40,3 +40,21 @@ var result = engineers.some(function(engineer) {
   return engineer.experienceYear > 15;
 })
 console.log('Bai 30: Anyone has more than 15 years experience is ' + result);
+
+// //31.Tạo ra 1 data mới mà trong đó ai ở FPT thì tăng 50$ cho mỗi người
+// var newEngineerArr = engineers.map(function(engineer) {
+//   if (engineer.company.toLowerCase() === 'fpt') {
+//     parseInt(engineer.salary.replace('$', '')) + 50;
+//   }
+// })
+// console.log('Bai 31: Encrease salary for FPT engineers', newEngineerArr);
+
+//32.Kiểm tra xem tên của tất cả các employee có phải đều trên 7 ký tự hết hay ko
+var checkCharacterNumber = engineers.every(function(engineer) {
+  return engineer.name.length > 7;
+})
+
+console.log('Bai 32: Check if all engineer name has longer than 7 characters is ' + checkCharacterNumber);
+
+
+
