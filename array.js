@@ -56,5 +56,8 @@ var checkCharacterNumber = engineers.every(function(engineer) {
 
 console.log('Bai 32: Check if all engineer name has longer than 7 characters is ' + checkCharacterNumber);
 
-
-
+// 33. Tìm ra những ai lớn hơn 25 tuổi
+var engineersBiggerThan25 = engineers.filter(function(engineer) {
+  return engineer.age > 25;
+})
+console.log('Bai 33: Log all engineers is older than 25 years', engineersBiggerThan25);
