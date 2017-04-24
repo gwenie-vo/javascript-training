@@ -52,19 +52,25 @@ console.log('Bai 30: Anyone has more than 15 years experience is ' + result);
 //32.Kiểm tra xem tên của tất cả các employee có phải đều trên 7 ký tự hết hay ko
 var checkCharacterNumber = engineers.every(function(engineer) {
   return engineer.name.length > 7;
-})
+});
 
 console.log('Bai 32: Check if all engineer name has longer than 7 characters is ' + checkCharacterNumber);
 
 // 33. Tìm ra những ai lớn hơn 25 tuổi
 var engineersBiggerThan25 = engineers.filter(function(engineer) {
   return engineer.age > 25;
-})
+});
 console.log('Bai 33: Log all engineers is older than 25 years', engineersBiggerThan25);
 
 //Kiểm tra xem trong tên của mọi người đều có chứa chữ 'n' hết đúng ko
 var checkIfNameHasCharacterN = engineers.every(function(engineer) {
   return engineer.name.indexOf('n') > -1;
-})
+});
 
 console.log('Bai 34: Check if all name has character `n` is ', checkIfNameHasCharacterN);
+
+var checkAnyOneOlderThan30 = engineers.some(function(engineer) {
+  return engineer.age > 30;
+});
+
+console.log('Bai 35: Check if any engineer is older than 30 years old ', checkAnyOneOlderThan30);
