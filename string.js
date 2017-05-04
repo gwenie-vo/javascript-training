@@ -49,3 +49,14 @@ for (var i = engineers.length - 1; i > 0; i--) {
 console.log('Bai 4: \n' + nameStartWithH + ' start by letter H');
 
 //5.Tìm những ai có họ bắt đầu bằng chữ N 
+var familyNameStartByN = '';
+for (var i = engineers.length - 1; i > 0; i--) {
+	var engineer = engineers[i];
+	var indexOfText = engineer.name.indexOf(' ');
+	var familyName = engineer.name.substring(indexOfText + 1, engineer.name.length);
+	if (familyName[0] === 'N') {
+		familyNameStartByN += engineer.name + '\n';
+	}
+}
+
+console.log('Bai 5 ' + familyNameStartByN + ' has familyName start with letter N');
