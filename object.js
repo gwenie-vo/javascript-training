@@ -73,7 +73,7 @@ for (var i = engineers.length; i > 0; i--) {
   if (engineers[i-1].company.toLowerCase() === 'axon') {
     axonEngineers.push(engineers[i-1].name);
   }
-}checkPluralNoun
+}
 console.log('Bai 8:  ' + axonEngineers + checkPluralNoun(axonEngineers) + ' working at Axon company');
 
 //function check plural noun
