@@ -36,3 +36,16 @@ for (i = engineers.length - 1; i > 0; i--) {
 }
 
 console.log('Bai 3 ' + changeTranByLe + ' changing from Tran to Le');
+
+//4.Tìm những ai có tên bắt đầu bẵng chữ H
+var nameStartWithH = '';
+for (var i = engineers.length - 1; i > 0; i--) {
+	var engineer = engineers[i];
+	if (engineer.name[0] === 'H') {
+		nameStartWithH += engineer.name + '\n';
+	}
+}
+
+console.log('Bai 4: \n' + nameStartWithH + ' start by letter H');
+
+//5.Tìm những ai có họ bắt đầu bằng chữ N 
