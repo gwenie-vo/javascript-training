@@ -54,9 +54,19 @@ for (var i = engineers.length - 1; i > 0; i--) {
 	var engineer = engineers[i];
 	var indexOfText = engineer.name.indexOf(' ');
 	var familyName = engineer.name.substring(indexOfText + 1, engineer.name.length);
+	console.log('familyName', familyName);
 	if (familyName[0] === 'N') {
 		familyNameStartByN += engineer.name + '\n';
 	}
 }
 
 console.log('Bai 5 ' + familyNameStartByN + ' has familyName start with letter N');
+
+
+// =====================
+var songLyrics = 'Wait a second, let me catch My breath \n Remind Me how it feels to hear your voice';
+
+//6.Tìm và thay thế "me" bằng "you"
+songLyrics.replace(/me/ig, 'you');
+
+console.log('Bai 6: ', songLyrics);
