@@ -67,10 +67,15 @@ console.log('Bai 5 ' + familyNameStartByN + ' has familyName start with letter N
 var songLyrics = 'Wait a second, let me catch My breath Remind Me how it feels to hear your voice';
 
 //6.Tìm và thay thế "me" bằng "you"
-songLyrics.replace(/me/ig, 'you');
+var repString = songLyrics.replace(/me/ig, 'you');
 
-console.log('Bai 6: ', songLyrics);
+console.log('Bai 6: ', repString);
 
 //7.Tìm vị trí chữ "c" cuối cùng trong mảng
 var lastIdxOfC = songLyrics.lastIndexOf('c');
 console.log('Bai 7', lastIdxOfC);
+
+//8.In hoa tất cả các chữ 'e' ===> 'E'
+var newString = songLyrics.replace(/e/ig, 'E');
+
+console.log('Bai 8 ', newString);
